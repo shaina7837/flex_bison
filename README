@@ -1,0 +1,13 @@
+FLEX AND BISON DEMO
+
+1. Clone this code
+2. Compile the code using following steps
+
+	$bison -d parser.y
+	$flex lexer.l
+	$g++ parser.tab.c lex.yy.c -lfl -o out
+	$./out input.html
+	$ls
+
+You'll see a new file named output.tex will be generated. Open the file to see the latex code corresponding to the input html code.
+	
